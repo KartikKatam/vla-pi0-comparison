@@ -1,0 +1,92 @@
+{
+  "pi0": {
+    "id": "cvqngdxt",
+    "name": "pi0_pilot_5k_s42",
+    "state": "failed",
+    "runtime_s": 5845.99340491,
+    "final_step": 4900,
+    "final_loss": 0.028166957199573517,
+    "final_grad_norm": 0.20839717984199524,
+    "config_name_arg": "",
+    "url": "https://wandb.ai/kartikkatam/openpi/runs/cvqngdxt"
+  },
+  "pi0_fast": {
+    "id": "879126jb",
+    "name": "pi0fast_pilot_5k_s42",
+    "state": "failed",
+    "runtime_s": 6329.494270202,
+    "final_step": 4900,
+    "final_loss": 2.099717140197754,
+    "final_grad_norm": 2.4606215953826904,
+    "config_name_arg": "",
+    "url": "https://wandb.ai/kartikkatam/openpi/runs/879126jb"
+  },
+  "all_pilot": [
+    {
+      "id": "yiqvwjgx",
+      "name": "pi0fast_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 899.913008002,
+      "final_step": 400,
+      "final_loss": 3.500194311141968,
+      "final_grad_norm": 3.002763271331787,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/yiqvwjgx"
+    },
+    {
+      "id": "gnf2sef1",
+      "name": "pi0_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 62.641313301,
+      "final_step": 0,
+      "final_loss": null,
+      "final_grad_norm": null,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/gnf2sef1"
+    },
+    {
+      "id": "879126jb",
+      "name": "pi0fast_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 6329.494270202,
+      "final_step": 4900,
+      "final_loss": 2.099717140197754,
+      "final_grad_norm": 2.4606215953826904,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/879126jb"
+    },
+    {
+      "id": "9kwlugp9",
+      "name": "pi0_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 67.403806274,
+      "final_step": 0,
+      "final_loss": null,
+      "final_grad_norm": null,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/9kwlugp9"
+    },
+    {
+      "id": "vnz52uhl",
+      "name": "pi0_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 18.806464364,
+      "final_step": 0,
+      "final_loss": null,
+      "final_grad_norm": null,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/vnz52uhl"
+    },
+    {
+      "id": "cvqngdxt",
+      "name": "pi0_pilot_5k_s42",
+      "state": "failed",
+      "runtime_s": 5845.99340491,
+      "final_step": 4900,
+      "final_loss": 0.028166957199573517,
+      "final_grad_norm": 0.20839717984199524,
+      "config_name_arg": "",
+      "url": "https://wandb.ai/kartikkatam/openpi/runs/cvqngdxt"
+    }
+  ]
+}

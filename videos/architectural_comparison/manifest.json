@@ -1,0 +1,102 @@
+[
+  {
+    "n": 1,
+    "category": "language_grounding_win_fast",
+    "suite": "libero_object",
+    "task": "pick up the orange juice and place it in the basket",
+    "headline": "Pi0 0/3 vs Pi0-FAST 3/3 \u2014 language\u2192object grounding gap",
+    "pi0_source": "rollout_pick_up_the_orange_juice_and_place_it_in_the_basket_failure.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_orange_juice_and_place_it_in_the_basket_success.mp4",
+    "stitched": "01_language_grounding_win_fast_orange_juice.mp4"
+  },
+  {
+    "n": 2,
+    "category": "language_grounding_win_fast",
+    "suite": "libero_object",
+    "task": "pick up the butter and place it in the basket",
+    "headline": "Pi0 1/3 vs Pi0-FAST 3/3 \u2014 lexical\u2192visual mapping",
+    "pi0_source": "rollout_pick_up_the_butter_and_place_it_in_the_basket_failure.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_butter_and_place_it_in_the_basket_success.mp4",
+    "stitched": "02_language_grounding_win_fast_butter.mp4"
+  },
+  {
+    "n": 3,
+    "category": "language_grounding_win_fast",
+    "suite": "libero_object",
+    "task": "pick up the cream cheese and place it in the basket",
+    "headline": "Pi0 1/3 vs Pi0-FAST 3/3 \u2014 language grounding",
+    "pi0_source": "rollout_pick_up_the_cream_cheese_and_place_it_in_the_basket_failure.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_cream_cheese_and_place_it_in_the_basket_success.mp4",
+    "stitched": "03_language_grounding_win_fast_cream_cheese.mp4"
+  },
+  {
+    "n": 4,
+    "category": "motor_control_win_pi0",
+    "suite": "libero_goal",
+    "task": "push the plate to the front of the stove",
+    "headline": "Pi0 3/3 vs Pi0-FAST 0/3 \u2014 continuous force modulation",
+    "pi0_source": "rollout_push_the_plate_to_the_front_of_the_stove_success.mp4",
+    "pi0_fast_source": "rollout_push_the_plate_to_the_front_of_the_stove_failure.mp4",
+    "stitched": "04_motor_control_win_pi0_push_the_plate_to_the_front_of_the_stove.mp4"
+  },
+  {
+    "n": 5,
+    "category": "motor_control_win_pi0",
+    "suite": "libero_goal",
+    "task": "open the middle drawer of the cabinet",
+    "headline": "Pi0 1/3 vs Pi0-FAST 0/3 \u2014 drawer-pull motor control",
+    "pi0_source": "rollout_open_the_middle_drawer_of_the_cabinet_success.mp4",
+    "pi0_fast_source": "rollout_open_the_middle_drawer_of_the_cabinet_failure.mp4",
+    "stitched": "05_motor_control_win_pi0_open_the_middle_drawer_of_the_cabinet.mp4"
+  },
+  {
+    "n": 6,
+    "category": "reversal",
+    "suite": "libero_object",
+    "task": "pick up the milk and place it in the basket",
+    "headline": "Pi0 2/3 vs Pi0-FAST 0/3 \u2014 Pi0 wins this Object task",
+    "pi0_source": "rollout_pick_up_the_milk_and_place_it_in_the_basket_success.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_milk_and_place_it_in_the_basket_failure.mp4",
+    "stitched": "06_reversal_pick_up_the_milk.mp4"
+  },
+  {
+    "n": 7,
+    "category": "both_succeed",
+    "suite": "libero_spatial",
+    "task": "pick up the black bowl on the ramekin and place it on the plate",
+    "headline": "Both 3/3 \u2014 both architectures handle clear spatial predicates",
+    "pi0_source": "rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "stitched": "07_both_succeed_black_bowl_on_the_ramekin.mp4"
+  },
+  {
+    "n": 8,
+    "category": "both_succeed",
+    "suite": "libero_goal",
+    "task": "put the bowl on the stove",
+    "headline": "Both 3/3 \u2014 simple goal-conditioned pick-and-place",
+    "pi0_source": "rollout_put_the_bowl_on_the_stove_success.mp4",
+    "pi0_fast_source": "rollout_put_the_bowl_on_the_stove_success.mp4",
+    "stitched": "08_both_succeed_put_the_bowl_on_the_stove.mp4"
+  },
+  {
+    "n": 9,
+    "category": "both_fail",
+    "suite": "libero_spatial",
+    "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+    "headline": "Both 0/3 \u2014 shared visual grounding failure",
+    "pi0_source": "rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_failure.mp4",
+    "pi0_fast_source": "rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_failure.mp4",
+    "stitched": "09_both_fail_black_bowl_on_the_wooden_cabinet.mp4"
+  },
+  {
+    "n": 10,
+    "category": "both_fail",
+    "suite": "libero_goal",
+    "task": "put the wine bottle on the rack",
+    "headline": "Both 0/3 \u2014 shared placement failure",
+    "pi0_source": "rollout_put_the_wine_bottle_on_the_rack_failure.mp4",
+    "pi0_fast_source": "rollout_put_the_wine_bottle_on_the_rack_failure.mp4",
+    "stitched": "10_both_fail_put_the_wine_bottle_on_the_rack.mp4"
+  }
+]

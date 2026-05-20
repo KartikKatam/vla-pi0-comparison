@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.venv/
+.venv-analysis/
+venv/
+
+# Local secrets
+.env
+.env.*
+*-token.env
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build artifacts
+*.aux
+*.log
+*.out
+*.xdv
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Tool downloads (we don't ship pandoc/tectonic with the repo)
+.tools/
+
+# Keep placeholders
+!.gitkeep
