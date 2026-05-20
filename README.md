@@ -15,7 +15,7 @@ Side-by-side LIBERO evaluation of two VLA architectures fine-tuned under identic
 - **Pi0** — flow-matching, continuous actions (10 Euler steps per chunk)
 - **Pi0-FAST** — autoregressive, FAST-tokenized discrete actions
 
-Identical hyperparameters (5,000 LoRA steps, batch 32, seed 42), identical hardware (2× H100 SXM5 80GB on RunPod), identical data (`physical-intelligence/libero` HuggingFace dataset). Single experimental axis: continuous vs discrete action representation.
+Identical hyperparameters (5,000 LoRA steps, batch 32, seed 42), identical hardware (2× H100 SXM5 80GB on RunPod), identical data. Single experimental axis: continuous vs discrete action representation.
 
 ## Results
 
@@ -28,6 +28,35 @@ Identical hyperparameters (5,000 LoRA steps, batch 32, seed 42), identical hardw
 | **Mean** (n=110) | **43.6%** | **43.6%** | 0.0 |
 
 Architectures are complementary: Pi0 wins where motor control / trajectory shaping matters; Pi0-FAST wins where language → object grounding matters.
+
+![Per-suite success rate](results/figures/fig01_success_per_suite.png)
+
+![Per-task heatmap (40 tasks × 2 models)](results/figures/fig02_per_task_heatmap.png)
+
+![Head-to-head per-task delta](results/figures/fig06_per_task_delta.png)
+
+![Training loss curves](results/figures/fig03_training_loss.png)
+
+## Videos to watch first
+
+These three side-by-side comparisons compress the architectural story into ~90 seconds total:
+
+1. **[01_orange_juice](videos/architectural_comparison/01_language_grounding_win_fast_orange_juice.mp4)** — Pi0 0/3 vs Pi0-FAST 3/3 on "pick up the orange juice." Strongest language-grounding signal.
+2. **[04_push_plate](videos/architectural_comparison/04_motor_control_win_pi0_push_the_plate_to_the_front_of_the_stove.mp4)** — Pi0 3/3 vs Pi0-FAST 0/3 on "push the plate to the front of the stove." Continuous force modulation wins.
+3. **[09_wooden_cabinet](videos/architectural_comparison/09_both_fail_black_bowl_on_the_wooden_cabinet.mp4)** — Both 0/3. Shared visual-grounding failure (not architecture-specific).
+
+Full list of 10 stitched comparisons: [`videos/README.md`](videos/README.md).
+
+## Finished features → evidence
+
+| Feature | Evidence |
+|---|---|
+| Pi0 LoRA fine-tuned 4k steps | [`results/pi0_train.csv`](results/pi0_train.csv), loss curve `fig03` |
+| Pi0-FAST LoRA fine-tuned 4k steps | [`results/pi0fast_train.csv`](results/pi0fast_train.csv), loss curve `fig03` |
+| Side-by-side eval pipeline | 114 raw rollout videos in [`videos/pi0/`](videos/pi0/) and [`videos/pi0_fast/`](videos/pi0_fast/) |
+| Quantitative eval, 4 LIBERO suites | [`results/results.json`](results/results.json), `fig01`, `fig02` |
+| Failure mode analysis | 10 stitched comparison videos in [`videos/architectural_comparison/`](videos/architectural_comparison/) |
+| Reproduction scripts | [`scripts/reproduction/01-04_*.sh`](scripts/reproduction/) |
 
 ## Repo layout
 
